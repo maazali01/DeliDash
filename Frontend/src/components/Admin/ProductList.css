@@ -1,0 +1,98 @@
+.admin-product-list {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-product-list h2,
+  .admin-product-list h3 {
+    text-align: center;
+    color: #333; /* This sets the heading text color to a dark gray */
+  }
+  
+  .admin-add-product{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+  .admin-product-list-ul {
+    margin-bottom: 20px;
+
+  }
+  
+  .admin-add-product input[type="text"],
+  .admin-add-product input[type="number"] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 14px;
+    width: calc(100% - 550px);
+  }
+  
+  .admin-add-product input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .admin-add-product button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #f04e30;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .admin-add-product button:hover {
+    background-color: #d74428;
+  }
+  
+  .admin-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-product-list-ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-product-list-li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    color: black; /* This sets the text color to black */
+  }
+  
+  .admin-product-list-li img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .admin-product-list-li p {
+    flex-grow: 1;
+    margin: 0;
+    margin-left: 10px;
+    color: black; 
+  }
+  
+  .admin-product-list-li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #f04e30;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .admin-product-list-li button:hover {
+    background-color: #d74428;
+  }
+  

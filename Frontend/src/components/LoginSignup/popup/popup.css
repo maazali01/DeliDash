@@ -1,0 +1,28 @@
+
+.popup-container {
+    position: fixed; /* Ensure the popup is fixed relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the popup */
+    z-index: 1000; /* Ensure it's on top of other content */
+    background-color: white; /* Background color for contrast */
+    padding: 20px;
+    animation: slidein 0.75s ease-in;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+h2{
+    color: black;
+}
+
+@keyframes slidein {
+    0%{
+        top: -50%;
+    }
+
+    100%{
+        top: 50%
+    }
+    
+}

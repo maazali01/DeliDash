@@ -1,0 +1,107 @@
+.restaurant-list {
+  padding: 20px;
+}
+
+.restaurant-heading {
+  text-align: center;
+  margin-bottom: 15px; /* Increased space below the heading */
+  font-size: 36px; /* Larger font size for prominence */
+  font-weight: lighter; /* Make the font bold */
+  color: #fff; /* White color for text to stand out against the background */
+  text-transform: uppercase; /* Uppercase letters for emphasis */
+  letter-spacing: 2px; /* Increased letter spacing for a more refined look */
+  position: relative;
+  width: 30%;
+  background: linear-gradient(135deg, #31C48D, #00a86b); /* Gradient background with #31C48D */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for a lifted look */
+  opacity: 5; /* Initial opacity */
+  transform: scale(0.8); /* Initial scale */
+  animation: fadeInUp 1s forwards; /* Apply the animation */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px); /* Initial position and size */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0); /* Final position and size */
+  }
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust card size and number per row */
+  gap: 20px; /* Spacing between cards */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.card-name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: lighter;
+  color: #333;
+}
+
+.card-location {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.view-products-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #31C48D;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.view-products-button:hover {
+  background-color: #27a87f;
+}

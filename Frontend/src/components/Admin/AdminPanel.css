@@ -1,0 +1,103 @@
+.admin-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  .admin-panel h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white; /* Dark color for text */
+  }
+  
+  .admin-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 20px;
+  }
+  
+  .admin-buttons button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #CD4B27; /* Primary button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .admin-buttons button:hover {
+    background-color: #b94423; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  .admin-buttons button:focus {
+    outline: none; /* Remove default outline on focus */
+  }
+  
+  .admin-buttons button:active {
+    background-color: #a0391d; /* Even darker shade when button is pressed */
+  }
+  
+  .restaurant-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+  }
+  
+  .restaurant-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .restaurant-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .restaurant-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  
+  .restaurant-card p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .restaurant-card button {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #CD4B27; /* Primary button color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .restaurant-card button:hover {
+    background-color: #a73c1e; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  .restaurant-card button:focus {
+    outline: none; /* Remove default outline on focus */
+  }
+  
+  .restaurant-card button:active {
+    background-color: #97361c; /* Even darker shade when button is pressed */
+  }
+  

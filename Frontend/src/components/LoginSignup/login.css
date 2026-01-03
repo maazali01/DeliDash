@@ -1,0 +1,120 @@
+/* login.css */
+
+.login-container2 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  margin: 7% auto;
+  opacity: 0; /* Start with 0 opacity */
+  transform: scale(0.95); /* Start with a smaller scale */
+  animation: fadeInScale 0.5s forwards; /* Animation to fade in and scale up */
+}
+
+@keyframes fadeInScale {
+  to {
+    opacity: 1; /* Fade to full opacity */
+    transform: scale(1); /* Scale to original size */
+  }
+}
+
+.login-header {
+  color: #333;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.form-group2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.username2,
+.password2 {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  font-size: inherit;
+}
+.username2 {
+  margin-top: 20px;
+}
+
+.input-field {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus state */
+}
+
+.input-field:focus {
+  border-color: #2980b9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5); /* Subtle shadow on focus */
+}
+
+.error2 {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.user-input2 {
+  width: 60%;
+  height: 30px;
+  margin-left: 75px;
+  font-size: inherit;
+}
+
+.button1 {
+  width: 50%;
+  padding: 10px;
+  background-color: #939393;
+  margin-top: 30px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover and active states */
+}
+
+.button1:hover {
+  background-color: #31C48D;
+}
+
+.button1:focus {
+  outline: none;
+}
+
+.button1:active {
+  background-color: #2980b9;
+  transform: translateY(2px); /* Subtle move down on click */
+}
+
+@media (max-width: 500px) {
+  .login-container2 {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .login-header {
+    font-size: 20px;
+  }
+
+  .input-field,
+  .button1 {
+    font-size: 14px;
+  }
+}

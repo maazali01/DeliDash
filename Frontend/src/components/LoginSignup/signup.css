@@ -1,0 +1,122 @@
+/* signup.css */
+
+.login-container3 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  margin: 3% auto;
+  opacity: 0; /* Start with 0 opacity */
+  transform: scale(0.95); /* Start with a smaller scale */
+  animation: fadeInScale 0.5s forwards; /* Animation to fade in and scale up */
+}
+
+@keyframes fadeInScale {
+  to {
+    opacity: 1; /* Fade to full opacity */
+    transform: scale(1); /* Scale to original size */
+  }
+}
+
+.user-input3 {
+  width: 60%;
+  height: 30px;
+  font-size: inherit;
+}
+
+.login-header {
+  color: #333;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.form-group3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.username3,
+.email3,
+.password3 {
+  color: #555;
+  font-size: inherit;
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+}
+
+.username3 {
+  margin-top: 20px;
+}
+
+.input-field {
+  width: 100%; /* Match the width of the button */
+  max-width: 100%; /* Ensure it doesn't exceed the container's width */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus state */
+}
+
+.input-field:focus {
+  border-color: #2980b9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5); /* Subtle shadow on focus */
+}
+
+.error3 {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.button3 {
+  width: 50%; /* Match the width of the input fields */
+  max-width: 100%; /* Ensure it doesn't exceed the container's width */
+  padding: 10px;
+  background-color: rgb(151, 148, 148);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover and active states */
+  margin-top: 20px;
+}
+
+.button3:hover {
+  background-color: #31C48D;
+}
+
+.button3:focus {
+  outline: none;
+}
+
+.button3:active {
+  background-color: #2980b9;
+  transform: translateY(2px); /* Subtle move down on click */
+}
+
+@media (max-width: 500px) {
+  .login-container3 {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .login-header {
+    font-size: 20px;
+  }
+
+  .input-field,
+  .button3 {
+    font-size: 14px;
+  }
+}

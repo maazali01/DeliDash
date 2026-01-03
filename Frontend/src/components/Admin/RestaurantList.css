@@ -1,0 +1,102 @@
+
+
+.restaurant-list {
+    padding: 20px;
+  }
+  
+  .restaurant-list h2,
+  .restaurant-list h3 {
+    text-align: center;
+  }
+  .manage{
+    color: white;
+  }
+  .restaurant-list .error {
+    color: red;
+    text-align: center;
+  }
+  .no{
+    color: white;
+  }
+  .add{
+    color: white;
+  }
+  
+  .restaurant-list .add-restaurant,
+  .restaurant-list .edit-restaurant {
+    margin-bottom: 20px;
+  }
+  
+  .restaurant-list input[type="text"],
+  .restaurant-list input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .restaurant-list button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .restaurant-list button:hover {
+    background-color: #45a049;
+  }
+  
+  .restaurant-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .restaurant-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 300px; /* Smaller card width */
+    text-align: center;
+  }
+  
+  .restaurant-list li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  .restaurant-list li h4,
+  .restaurant-list li p {
+    margin: 5px 0;
+    font-weight: normal;
+  }
+  
+  .restaurant-list li button {
+    margin: 10px 5px;
+    background-color: #008CBA;
+  }
+  
+  .restaurant-list li button:hover {
+    background-color: #007bb5;
+  }
+  
+  .restaurant-list li button:last-child {
+    background-color: #f44336;
+  }
+  
+  .restaurant-list li button:last-child:hover {
+    background-color: #d32f2f;
+  }
+  

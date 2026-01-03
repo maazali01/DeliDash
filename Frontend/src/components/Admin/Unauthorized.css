@@ -1,0 +1,21 @@
+.head {
+    font-size: 24px; /* Starting font size */
+    color: #333; /* Text color */
+    animation: scaleRotate 2s ease-in-out forwards; /* Apply the animation */
+    text-shadow: 0 0 5px rgba(64, 241, 37, 0.8); /* Initial glow effect */
+    color: white;
+  }
+  
+  @keyframes scaleRotate {
+    0% {
+      transform: scale(0.5) rotate(0deg); /* Initial state: smaller and not rotated */
+      opacity: 0; /* Start with opacity 0 */
+      text-shadow: 0 0 5px rgba(38, 250, 84, 0.9); /* Initial glow */
+    }
+    100% {
+      transform: scale(1) rotate(360deg); /* Final state: original size and fully rotated */
+      opacity: 1; /* End with full opacity */
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Final glow */
+    }
+  }
+  
